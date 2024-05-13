@@ -1,0 +1,115 @@
+.homeMain
+{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.homeMain
+{
+    width: 1194px;
+    height: 650px;
+    margin-top: 104px;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px) 
+{
+    .homeMain {
+        width: 696px;
+        height: 495px;
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 696px) 
+{
+    .homeMain 
+    {
+        width: 327px;
+        height: 839px;
+        margin-top: 52px;
+        padding: 0 5px;
+        flex-direction: column;
+    }
+}
+
+.homeFirstColumn
+{
+    height: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homeSecondColumn
+{
+    height: 100%;
+    width: 490px;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px) 
+{
+    .homeFirstColumn 
+    {
+        width: 383px;
+    }
+
+    .homeSecondColumn
+    {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 696px) 
+{
+    .homeFirstColumn 
+    {
+        width: 327px;
+        height: 607px;
+    }
+
+    .homeSecondColumn
+    {
+        width: 327px;
+        height: 192px;
+    }
+}
+
+.homeFirstColumnFirstRow
+{
+    width: 100%;
+    height: 194px;
+}
+
+.homeFirstColumnSecondRow
+{
+    width: 100%;
+    height: 418px;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px) 
+{
+    .homeFirstColumnFirstRow
+    {
+        height: 125px;
+    }
+
+    .homeFirstColumnSecondRow
+    {
+        height: 356px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .homeFirstColumnFirstRow
+    {
+        height: 105px;
+    }
+
+    .homeFirstColumnSecondRow
+    {
+        height: 460px;
+    }
+}

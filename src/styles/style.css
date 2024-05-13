@@ -1,0 +1,222 @@
+:root {
+    --header-color: #789776;
+    --text-color: #5B6158;
+    --background-color: #FEFBF7;
+    --second-color: #98958B;
+    --additional-color: #637D61;
+}
+
+body
+{
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'New-YorkerC';
+    src: url('../fonts/New-YorkerC.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('../fonts/Raleway-SemiBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype')
+}
+
+.Raleway.regular
+{
+    font-family: 'Raleway-Regular';
+    font-feature-settings: "lnum";
+}
+
+.Raleway.Medium
+{
+    font-family: 'Raleway-Medium';
+    font-feature-settings: "lnum";
+}
+
+.Raleway.SemiBold
+{
+    font-family: 'Raleway-SemiBold';
+    font-feature-settings: "lnum";
+}
+
+.New-YorkerC.regular
+{
+    font-family: 'New-YorkerC';
+    font-feature-settings: "lnum";
+}
+
+.middleWeight
+{
+    font-weight: 500;
+}
+
+.smallMediumWeight
+{
+    font-weight: 400;
+}
+
+.text.headerColor
+{
+    color: var(--header-color);
+}
+
+.text.textColor
+{
+    color: var(--text-color);
+}
+
+.text.backgroundColor
+{
+    color: var(--background-color);
+}
+
+.text.secondColor
+{
+    color: var(--second-color);
+}
+
+.text.additional
+{
+    color: var(--additional-color)
+}
+
+html
+{
+    background-color: var(--background-color);
+}
+
+.header
+{
+    width: 1194px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 26px;
+
+}
+
+@keyframes fadeStart {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu > .text:not(:last-child) {
+    margin-right: 26px;
+}
+
+.menu-icon
+{
+    margin-left: 38px;
+}
+
+.menu.hidden
+{
+    display: none;
+}
+
+.telephone
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+.menu 
+{
+    display: flex;
+    min-width: 327px;
+    width: 691px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1195px) 
+{
+    .telephone 
+    {
+        width: 164px;
+    }
+}
+
+
+@media screen and (max-width: 1194px) 
+{
+    .menu 
+    {
+        animation: fadeStart 0.5s ease;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 696px) 
+{
+    .menu
+    {
+        width: 322px;
+    }
+
+    .header
+    {
+        margin-top: 48px;
+        width: 327px;
+        margin-top: 48px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px)
+{
+    .header {
+      width: 696px;
+      height: 48px;
+      margin-top: 19px;
+    }
+}
+
+.homeMainText
+{
+    font-family: 'New-YorkerC';
+    font-feature-settings: "lnum";
+    font-weight: 400;
+    font-size: 84px;
+    color: var(--additional-color);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    word-wrap: break-word;
+    letter-spacing: 0.7%;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px)
+{
+    .homeMainText
+    {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .homeMainText
+    {
+        letter-spacing: 0.7%;
+        font-size: 46px;
+    }
+}
