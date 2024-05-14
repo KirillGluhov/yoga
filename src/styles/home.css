@@ -12,7 +12,7 @@
     margin-top: 104px;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px) 
+@media screen and (max-width: 1194px) and (min-width: 696px) 
 {
     .homeMain {
         width: 696px;
@@ -29,7 +29,7 @@
         height: 839px;
         margin-top: 52px;
         padding: 0 5px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
@@ -46,9 +46,12 @@
 {
     height: 100%;
     width: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px) 
+@media screen and (max-width: 1194px) and (min-width: 696px) 
 {
     .homeFirstColumn 
     {
@@ -66,13 +69,13 @@
     .homeFirstColumn 
     {
         width: 327px;
-        height: 607px;
+        height: 279px;
     }
 
     .homeSecondColumn
     {
         width: 327px;
-        height: 192px;
+        height: 535px;
     }
 }
 
@@ -86,9 +89,12 @@
 {
     width: 100%;
     height: 418px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px) 
+@media screen and (max-width: 1194px) and (min-width: 696px) 
 {
     .homeFirstColumnFirstRow
     {
@@ -105,11 +111,356 @@
 {
     .homeFirstColumnFirstRow
     {
-        height: 105px;
+        display: none;
+    }
+
+    .homeFirstColumnFirstRow .homeMainText
+    {
+        text-align: center;
     }
 
     .homeFirstColumnSecondRow
     {
-        height: 460px;
+        height: 392px;
     }
 }
+
+.homeTextSecond
+{
+    width: 100%;
+    height: 45px;
+}
+
+.homePoints
+{
+    width: 100%;
+    height: 250px;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 696px) 
+{
+    .homeTextSecond
+    {
+        height: 45px;
+    }
+
+    .homePoints
+    {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .homeTextSecond
+    {
+        height: 38px;
+    }
+
+    .homePoints
+    {
+        height: 192px;
+    }
+}
+
+.homeMainTextInvisible
+{
+    display: none;
+}
+
+.yogaCarousel
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 696px)
+{
+    .homeMainTextInvisible
+    {
+        height: 105px;
+        width: 100%;
+        display: flex;
+    }
+
+    .yogaCarousel
+    {
+        height: 392px;
+    }
+
+}
+
+.yogaPointsAndPhoto
+{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 696px) 
+{
+    .yogaPointsAndPhoto
+    {
+        width: 82%;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .yogaPointsAndPhoto
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.yogaPhotoSmall
+{
+    height: 100%;
+    width: 183px;
+}
+
+.plusPointsToCenter
+{
+    height: 100%;
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 696px) 
+{
+    .yogaPhotoSmall
+    {
+        width: 139px;
+        height: 192px;
+    }
+
+    .plusPointsToCenter
+    {
+        width: 164px;
+        height: 192px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .yogaPhotoSmall
+    {
+        width: 139px;
+    }
+
+    .plusPointsToCenter
+    {
+        width: 174px;
+    }
+}
+
+.homeSmallPhoto
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 91.5px 91.5px 0 0;
+}
+
+.pointsToCenter
+{
+    width: 100%;
+    height: 178px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 696px) 
+{
+    .pointsToCenter
+    {
+        height: 135px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .pointsToCenter
+    {
+        height: 131px;
+    }
+}
+
+.onePoint
+{
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1194px)
+{
+    .onePoint
+    {
+        height: 39px;
+        width: 100%;
+    }
+}
+
+.forNumber
+{
+    height: 100%;
+    width: 26px;
+}
+
+.forPlusesToChoose
+{
+    height: 100%;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 696px)
+{
+    .forNumber
+    {
+        width: 23px;
+    }
+
+    .forPlusesToChoose
+    {
+        width: 132px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .forNumber
+    {
+        width: 23px;
+    }
+
+    .forPlusesToChoose
+    {
+        width: 140px;
+    }
+}
+
+.homeChangingPhoto
+{
+    width: 100%;
+    height: 604px;
+    position: relative;
+}
+
+.panelOfNavigation
+{
+    width: 100%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px)
+{
+    .homeChangingPhoto
+    {
+        margin-top: 25px;
+        height: 395px;
+    }
+
+    .panelOfNavigation
+    {
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .homeChangingPhoto
+    {
+        height: 380px;
+    }
+
+    .panelOfNavigation
+    {
+        display: none;
+    }
+}
+
+.homeNumberOfPhotoInCarouselAndProgress
+{
+    height: 19px;
+    width: 386px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeButtonsToChangePhoto
+{
+    height: 34px;
+    width: 76px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px)
+{
+    .homeNumberOfPhotoInCarouselAndProgress
+    {
+        width: 229px;
+    }
+}
+
+.homeNumberOfPhotoInCarousel
+{
+    height: 100%;
+    width: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.homeProgressBar
+{
+    height: 3px;
+    width: 341px;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px)
+{
+    .homeNumberOfPhotoInCarousel
+    {
+        width: 29px;
+    }
+
+    .homeProgressBar
+    {
+        width: 194.25px;
+    }
+}
+
+.homeChoosingPhoto
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 90% 0;
+    border-radius: 244px 244px 0px 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+}
+
+.homeChoosingPhoto.active {
+    opacity: 1;
+  }

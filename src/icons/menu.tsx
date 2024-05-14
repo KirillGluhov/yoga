@@ -2,7 +2,7 @@ import React from "react";
 
 interface MenuProps {
     onClick: (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => void;
-  }
+}
 
 const Menu: React.FC<MenuProps> = ({ onClick }) =>
 {
