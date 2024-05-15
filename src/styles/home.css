@@ -358,6 +358,8 @@
     width: 100%;
     height: 604px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
 }
 
 .panelOfNavigation
@@ -463,4 +465,143 @@
 
 .homeChoosingPhoto.active {
     opacity: 1;
-  }
+}
+
+.homeNumberOfPhotoInCarousel
+{
+    position: relative;
+}
+
+.leftArrow
+{
+    position: absolute;
+    display: none;
+}
+
+.rightArrow
+{
+    position: absolute;
+    display: none;
+}
+
+@media screen and (max-width: 696px)
+{
+    .leftArrow
+    {
+        display: flex;
+        width: 50%;
+        height: 70%;
+        z-index: 3;
+    }
+
+    .rightArrow
+    {
+        margin-left: 50%;
+        display: flex;
+        width: 50%;
+        z-index: 3;
+        height: 70%;
+    }
+}
+
+.homeMain
+{
+    position: relative;
+}
+
+.flower
+{
+    position: absolute;
+    right: -119px;
+    top: -140px;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px)
+{
+    .flower
+    {
+        right: -58px;
+        top: -78px;
+    }
+}
+
+.homeFirstColumn
+{
+    position: relative;
+}
+
+.flowerSmall
+{
+    position: absolute;
+    right: -6px;
+    top: 21px;
+}
+
+.homeFirstColumnSecondRow
+{
+    position: relative;
+}
+
+.wrapForSignUp
+{
+    position: absolute;
+    right: 0px;
+    top: 61px;
+    height: 155px;
+    width: 155px;
+}
+
+.buttonSignUp
+{
+    position: absolute;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 1194px) and (min-width: 697px)
+{
+    .wrapForSignUp
+    {
+        height: 111px;
+        width: 111px;
+        top: 70.42px;
+        right: 17px;
+    }
+
+    .buttonSignUp
+    {
+        height: 111px;
+        width: 111px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .wrapForSignUp
+    {
+        height: 111px;
+        width: 111px;
+        top: 131px;
+        z-index: 3;
+    }
+
+    .buttonSignUp
+    {
+        height: 111px;
+        width: 111px;
+    }
+}
+
+.homeSecondColumn
+{
+    position: relative;
+}
+
+.flowersImage
+{
+    position: absolute;
+    z-index: 1;
+    transition: all 0.8s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -319,6 +319,13 @@ html
     }
 }
 
+.homeNumberListedWrap
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .homeNumberListed
 {
     font-family: 'Raleway-Regular';
@@ -328,6 +335,14 @@ html
     color: var(--header-color);
     margin: 0;
     font-feature-settings: "lnum";
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.homeNumberListed.active
+{
+    opacity: 1;
 }
 
 .homeAll
@@ -353,3 +368,38 @@ html
     transition: width 0.5s ease;
 }
 
+.arrow:hover
+{
+    cursor: pointer;
+}
+
+.arrowWrap
+{
+    width: 34px;
+    height: 34px;
+    position: relative;
+}
+
+.arrow
+{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.arrow.active
+{
+    opacity: 1;
+}
+
+.text.textColor
+{
+    transition: transform 0.5s ease;
+}
+
+.text.textColor:hover
+{
+    transform: translateY(2px);
+    color: var(--additional-color);
+    cursor: pointer;
+}
