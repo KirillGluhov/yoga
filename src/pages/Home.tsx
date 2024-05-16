@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-import { ElementType, TypographyClass, Font, FontStyle, DeviceType, Color, Weight } from "../StyleDefinition";
 import Header from "../components/Header";
-import Typography from "../components/Typography";
 import useResize from "../hooks/use-resize";
 import "../styles/home.css"
-import axios from "axios";
 import { fetchHomeSmallPhoto } from "../server/MockedServer";
 import YogaCarousel from "../components/YogaCarousel";
 

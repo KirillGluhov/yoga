@@ -7,12 +7,12 @@
 
 .homeMain
 {
-    width: 1194px;
+    width: 1200px;
     height: 650px;
     margin-top: 104px;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px) 
+@media screen and (max-width: 1200px) and (min-width: 696px) 
 {
     .homeMain {
         width: 696px;
@@ -51,7 +51,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px) 
+@media screen and (max-width: 1200px) and (min-width: 696px) 
 {
     .homeFirstColumn 
     {
@@ -94,7 +94,7 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px) 
+@media screen and (max-width: 1200px) and (min-width: 696px) 
 {
     .homeFirstColumnFirstRow
     {
@@ -137,7 +137,7 @@
     height: 250px;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px) 
+@media screen and (max-width: 1200px) and (min-width: 696px) 
 {
     .homeTextSecond
     {
@@ -201,12 +201,11 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px) 
+@media screen and (max-width: 1200px) and (min-width: 696px) 
 {
     .yogaPointsAndPhoto
     {
         width: 82%;
-        justify-content: start;
     }
 }
 
@@ -234,7 +233,7 @@
     justify-content: end;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px) 
+@media screen and (max-width: 1200px) and (min-width: 696px) 
 {
     .yogaPhotoSmall
     {
@@ -279,7 +278,7 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px) 
+@media screen and (max-width: 1200px) and (min-width: 696px) 
 {
     .pointsToCenter
     {
@@ -303,7 +302,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1194px)
+@media screen and (max-width: 1200px)
 {
     .onePoint
     {
@@ -327,7 +326,7 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px)
+@media screen and (max-width: 1200px) and (min-width: 696px)
 {
     .forNumber
     {
@@ -371,7 +370,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px)
+@media screen and (max-width: 1200px) and (min-width: 697px)
 {
     .homeChangingPhoto
     {
@@ -415,7 +414,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px)
+@media screen and (max-width: 1200px) and (min-width: 697px)
 {
     .homeNumberOfPhotoInCarouselAndProgress
     {
@@ -438,7 +437,7 @@
     width: 341px;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px)
+@media screen and (max-width: 1200px) and (min-width: 697px)
 {
     .homeNumberOfPhotoInCarousel
     {
@@ -516,7 +515,7 @@
     top: -140px;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px)
+@media screen and (max-width: 1200px) and (min-width: 697px)
 {
     .flower
     {
@@ -557,7 +556,7 @@
     z-index: 1000;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px)
+@media screen and (max-width: 1200px) and (min-width: 697px)
 {
     .wrapForSignUp
     {

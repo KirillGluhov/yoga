@@ -6,6 +6,7 @@
     --additional-color: #637D61;
     --black-additional-color: #3F423D;
     --pass-color: #CBC9C1;
+    --green-for-title:#618B5E;
 }
 
 body
@@ -99,7 +100,7 @@ html
 
 .header
 {
-    width: 1194px;
+    width: 1200px;
     height: 50px;
     display: flex;
     margin: 0 auto;
@@ -146,9 +147,10 @@ html
     min-width: 327px;
     width: 691px;
     margin: 0 auto;
+    align-items: center;
 }
 
-@media screen and (min-width: 1195px) 
+@media screen and (min-width: 1201px) 
 {
     .telephone 
     {
@@ -157,13 +159,14 @@ html
 }
 
 
-@media screen and (max-width: 1194px) 
+@media screen and (max-width: 1200px) 
 {
     .menu 
     {
         animation: fadeStart 0.5s ease;
         flex-direction: column;
         padding-left: 5px;
+        align-items: start;
     }
 }
 
@@ -183,7 +186,7 @@ html
     }
 }
 
-@media screen and (max-width: 1194px) and (min-width: 697px)
+@media screen and (max-width: 1200px) and (min-width: 697px)
 {
     .header {
       width: 696px;
@@ -206,7 +209,7 @@ html
     letter-spacing: 0.7%;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px)
+@media screen and (max-width: 1200px) and (min-width: 696px)
 {
     .homeMainText
     {
@@ -236,7 +239,7 @@ html
     margin: 0;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px)
+@media screen and (max-width: 1200px) and (min-width: 696px)
 {
     .textHarmony
     {
@@ -281,7 +284,7 @@ html
     width: 140px;
 }
 
-@media screen and (max-width: 1194px) and (min-width: 696px)
+@media screen and (max-width: 1200px) and (min-width: 696px)
 {
     .bigNumber
     {
@@ -402,4 +405,76 @@ html
     transform: translateY(2px);
     color: var(--additional-color);
     cursor: pointer;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.text.textColor
+{
+    vertical-align: middle;
+}
+
+a.text
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.directionTitleText
+{
+    font-family: 'New-YorkerC';
+    font-weight: 400;
+    color: var(--green-for-title);
+    line-height: 1.2;
+    letter-spacing: 0.007;
+    font-size: 48px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionTitleText
+    {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .directionTitleText
+    {
+        font-size: 26px;
+    }
+}
+
+.directionSecondInfoText
+{
+    font-family: 'Raleway-Regular';
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-additional-color);
+    line-height: 1.3;
+    margin: 0;
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionSecondInfoText
+    {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .directionSecondInfoText
+    {
+        font-size: 16px;
+        margin: 0;
+    }
 }

@@ -23,71 +23,11 @@ function Header(props: {width: number, isScreenPC: boolean, isScreenTablet: bool
                     <Logo width={115} height={50}/>
                 </div>
                 <div className="menu">
-                <Typography 
-                    fontstyle={
-                        new TypographyClass(
-                            ElementType.MENU,
-                            Font.Raleway, 
-                            FontStyle.medium, 
-                            { mobile: 13, desktop: 13 }, 
-                            "ПРОГРАММЫ", 
-                            Color.text, 
-                            Weight.medium
-                        )
-                    } 
-                    devicetype={DeviceType.PC} />
-                <Typography 
-                    fontstyle={
-                        new TypographyClass(
-                            ElementType.MENU,
-                            Font.Raleway, 
-                            FontStyle.medium, 
-                            { mobile: 13, desktop: 13 }, 
-                            "ПРАЙС", 
-                            Color.text, 
-                            Weight.medium
-                        )
-                    } 
-                    devicetype={DeviceType.PC} />
-                <Typography 
-                    fontstyle={
-                        new TypographyClass(
-                            ElementType.MENU,
-                            Font.Raleway, 
-                            FontStyle.medium, 
-                            { mobile: 13, desktop: 13 }, 
-                            "РАСПИСАНИЕ", 
-                            Color.text, 
-                            Weight.medium
-                        )
-                    } 
-                    devicetype={DeviceType.PC} />
-                <Typography 
-                    fontstyle={
-                        new TypographyClass(
-                            ElementType.MENU,
-                            Font.Raleway, 
-                            FontStyle.medium, 
-                            { mobile: 13, desktop: 13 }, 
-                            "ОТЗЫВЫ", 
-                            Color.text, 
-                            Weight.medium
-                        )
-                    } 
-                    devicetype={DeviceType.PC} />
-                <Typography 
-                    fontstyle={
-                        new TypographyClass(
-                            ElementType.MENU,
-                            Font.Raleway, 
-                            FontStyle.medium, 
-                            { mobile: 13, desktop: 13 }, 
-                            "КОНТАКТЫ", 
-                            Color.text, 
-                            Weight.medium
-                        )
-                    } 
-                    devicetype={DeviceType.PC} />
+                    <a href="#direction" className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ПРОГРАММЫ</a>
+                    <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ПРАЙС</a>
+                    <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>РАСПИСАНИЕ</a>
+                    <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ОТЗЫВЫ</a>
+                    <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>КОНТАКТЫ</a>
                 </div>
                 <div className="telephone">
                     <Telephone/>
@@ -133,71 +73,11 @@ function Header(props: {width: number, isScreenPC: boolean, isScreenTablet: bool
                 </div>
             </div> 
             <div className={`menu ${!isOpen ? 'hidden' : ''}`}>
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "ПРОГРАММЫ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.TABLET} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "ПРАЙС", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.TABLET} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "РАСПИСАНИЕ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.TABLET} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "ОТЗЫВЫ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.TABLET} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "КОНТАКТЫ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.TABLET} />
+                <a href="#direction" className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ПРОГРАММЫ</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ПРАЙС</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>РАСПИСАНИЕ</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ОТЗЫВЫ</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>КОНТАКТЫ</a>
             </div>
             </>
             : 
@@ -225,71 +105,11 @@ function Header(props: {width: number, isScreenPC: boolean, isScreenTablet: bool
                 </div>
             </div> 
             <div className={`menu ${!isOpen ? 'hidden' : ''}`}>
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "ПРОГРАММЫ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.MOBILE} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "ПРАЙС", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.MOBILE} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "РАСПИСАНИЕ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.MOBILE} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "ОТЗЫВЫ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.MOBILE} />
-            <Typography 
-                fontstyle={
-                    new TypographyClass(
-                        ElementType.MENU,
-                        Font.Raleway, 
-                        FontStyle.medium, 
-                        { mobile: 13, desktop: 13 }, 
-                        "КОНТАКТЫ", 
-                        Color.text, 
-                        Weight.medium
-                    )
-                } 
-                devicetype={DeviceType.MOBILE} />
+                <a href="#direction" className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ПРОГРАММЫ</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ПРАЙС</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>РАСПИСАНИЕ</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>ОТЗЫВЫ</a>
+                <a className="text textColor middleWeight Raleway Medium" style={{fontSize: "13px"}}>КОНТАКТЫ</a>
             </div>
             </>
         }
@@ -297,3 +117,8 @@ function Header(props: {width: number, isScreenPC: boolean, isScreenTablet: bool
 }
 
 export default Header;
+
+/*
+
+
+*/
