@@ -395,12 +395,17 @@ html
     opacity: 1;
 }
 
-.text.textColor
+.menu-icon:hover
+{
+    cursor: pointer;
+}
+
+.text.textColor.up-and-down
 {
     transition: transform 0.5s ease;
 }
 
-.text.textColor:hover
+.text.up-and-down.textColor:hover
 {
     transform: translateY(2px);
     color: var(--additional-color);

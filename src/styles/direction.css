@@ -1,4 +1,9 @@
-
+:root {
+    --border-color: #D2CFC7;
+    --accent-color: #789776;
+    --text-color: #5B6158;
+    --background-color: #FEFBF7;
+}
 
 .directionTitleWithMainInformation
 {
@@ -71,5 +76,124 @@
     {
         width: 100%;
         height: 42px;
+    }
+}
+
+.directionMainInformation
+{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1201px)
+{
+    .directionMainInformation
+    {
+        width: 1200px;
+        height: 506px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionMainInformation
+    {
+        width: 696px;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .directionMainInformation
+    {
+        justify-content: center;
+    }
+}
+
+.typesOfDirections
+{
+    height: 100%;
+    width: 327px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .typesOfDirections
+    {
+        height: fit-content;
+        width: 696px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .typesOfDirections
+    {
+        width: 100vw;
+        height: 39px;
+    }
+}
+
+.oneDirection
+{
+    border-radius: 30px;
+    border: 1px solid ;
+    border-color: var(--border-color);
+    padding: 16px 32px;
+    background-color: rgba(red, green, blue, 1);
+    margin: 0px 6px 6px 0px;
+    transition: border-color background-color 0.3s ease-in-out;
+}
+
+.oneDirection:hover
+{
+    border-color: var(--accent-color);
+}
+
+.oneDirection:active
+{
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+.oneDirection:active .directionText
+{
+    color: var(--background-color);
+}
+
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype')
+}
+
+.directionText
+{
+    font-family: 'Raleway-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.25;
+    color: var(--text-color);
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionText
+    {
+        font-size: 12px;
+    }
+
+    .oneDirection
+    {
+        padding: 16px, 20px;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .oneDirection
+    {
+        padding: 15px, 20px;
     }
 }

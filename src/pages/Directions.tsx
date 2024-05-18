@@ -21,7 +21,14 @@ function Direction()
             </div>
         </div>
         <div className="directionMainInformation" style={{backgroundColor: "red"}}>
-
+            <div className="typesOfDirections" style={{backgroundColor: "gray"}}>
+                <button className="oneDirection"><p className="directionText">Кундалини-йога</p></button>
+                <button className="oneDirection"><p className="directionText">Хатха-йога</p></button>
+                <button className="oneDirection"><p className="directionText">Пилатес</p></button>
+                <button className="oneDirection"><p className="directionText">Здоровая спина</p></button>
+                <button className="oneDirection"><p className="directionText">Флоу-йога</p></button>
+                <button className="oneDirection"><p className="directionText">Стретчинг</p></button>
+            </div>
         </div>
     </div>);
 }
