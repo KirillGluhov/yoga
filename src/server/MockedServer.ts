@@ -45,10 +45,19 @@ export async function fetchHomeAllPhoto() {
     }
 }
 
-export async function fetchDirections() {
+export interface Direction
+{
+    name: string,
+    days: Array<number>,
+    duration: number,
+    description: Array<string>,
+    url: string
+}
+
+export async function fetchDirections() : Promise<Array<Direction>> {
     const mock = new MockAdapter(axios);
 
-    mock.onGet('/api/direction').reply(200, {
+    mock.onGet('/api/description').reply(200, {
         directions: [
             {
                 name: "Кундалини-йога",
