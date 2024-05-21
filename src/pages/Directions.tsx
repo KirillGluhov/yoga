@@ -7,6 +7,15 @@ import RightArrowActive from "../icons/rightArrowActive";
 import LeftArrow from "../icons/leftArrow";
 import LeftArrowActive from "../icons/leftArrowActive";
 import RightArrow from "../icons/rightArrow";
+import { chooseDay } from "../functions/chooseDay";
+
+import calendarLg from "../UIelements/calendarLg.svg";
+import calendarMd from "../UIelements/calendarMd.svg";
+import calendarSm from "../UIelements/calendarSm.svg";
+
+import timerLg from "../UIelements/timerLg.svg";
+import timerMd from "../UIelements/timerMd.svg";
+import timerSm from "../UIelements/timerSm.svg";
 
 function Directions()
 {
@@ -99,13 +108,88 @@ function Directions()
                     }
                 </div>
                 <div className="directionTextAll">
-                    <div className="directionDateAndTime" style={{backgroundColor: "red"}}></div>
+                    <div className="directionDateAndTime">
+                        <div className="directionTitleCanBeChange">
+                            {
+                                directions.map((direction, index) => (
+                                    <h3 
+                                        key={index} 
+                                        className={`directionTitleMainPart ${position === index + 1 ? 'active' : ''}`}
+                                    >{direction.name}</h3>
+                                ))
+                            }
+                        </div>
+                        <div className="directionDateAndTimeWithText">
+                            <div className="directionDateWithLargeLength">
+                                <div className="directionCalendar">
+                                    <img 
+                                        src={
+                                            (isScreenPC) ? 
+                                            calendarLg : 
+                                            (isScreenTablet) ? 
+                                            calendarMd : calendarSm
+                                        }
+                                    />
+                                </div>
+                                <div className="directionCalendarText">
+                                    {
+                                        directions.map((direction, index) => (
+                                            <div className="directionCalendarAndTimerTextWrapper" key={index}>
+                                                <p className={`directionCalendarAndTimerText directionAdditionalSpace ${position === index + 1 ? 'active' : ''}`}>Проходит по: </p>
+                                                <p 
+                                                    
+                                                    className={`directionCalendarAndTimerText ${position === index + 1 ? 'active' : ''}`}
+                                                >{`${
+                                                    direction.days.reduce(
+                                                        (accumulator, currentValue, index) => 
+                                                        accumulator + chooseDay(currentValue) + (
+                                                            index < direction.days.length - 1 ? ", " : ""
+                                                        ), ''
+                                                    )
+                                                }`}</p>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            <div className="directionTimeWithLargeLength">
+                                <div className="directionTimer">
+                                    <img 
+                                        src={
+                                            (isScreenPC) ? 
+                                            timerLg : 
+                                            (isScreenTablet) ? 
+                                            timerMd : timerSm
+                                        }
+                                    />
+                                </div>
+                                <div className="directionTimerText">
+                                    {
+                                        directions.map((direction, index) => (
+                                            <div className="directionCalendarAndTimerTextWrapper" key={index}>
+                                                <p className={`directionCalendarAndTimerText directionAdditionalSpace ${position === index + 1 ? 'active' : ''}`}>Длительность: </p>
+                                                <p  
+                                                    className={`directionCalendarAndTimerText ${position === index + 1 ? 'active' : ''}`}
+                                                >{`${direction.duration} минут`}</p>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="directionTextAndNavigation">
                         <div className="directionTextCanBeBigger">
-                            <div 
-                                className="directionTitleWithText" 
-                                style={{backgroundColor: "orange"}}
-                            ></div>
+                            <div className="directionTitleWithText" >
+                            {
+                                directions.map((direction, index) => (
+                                    <h3 
+                                        key={index} 
+                                        className={`directionTitleMainPart ${position === index + 1 ? 'active' : ''}`}
+                                    >{direction.name}</h3>
+                                ))
+                            }
+                            </div>
                             <div className="directionTextSmall">
                                 {
                                     directions.map((direction, index) => (

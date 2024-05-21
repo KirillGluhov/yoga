@@ -9,6 +9,10 @@
     --green-for-title:#618B5E;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body
 {
     margin: 0px;

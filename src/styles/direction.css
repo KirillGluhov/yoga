@@ -7,6 +7,11 @@
     --pass-color: #CBC9C1;
 }
 
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('../fonts/Raleway-SemiBold.ttf') format('truetype')
+}
+
 .directionTitleWithMainInformation
 {
     height: 115px;
@@ -348,16 +353,19 @@
     }
 }
 
-.directionDateAndTime
-{
-    width: 100%;
-    height: 124px;
-}
-
 .directionTextAndNavigation
 {
     width: 100%;
     height: 336px;
+}
+
+.directionDateAndTime
+{
+    width: 100%;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 696px)
@@ -466,7 +474,7 @@
     .directionTitleWithText
     {
         display: flex;
-        height: 13px;
+        height: 15px;
     }
 
     .directionTextSmall
@@ -477,6 +485,11 @@
 
 @media screen and (max-width: 696px)
 {
+    .directionTitleWithText
+    {
+        display: none;
+    }
+
     .directionTextSmall
     {
         height: 200px;
@@ -631,4 +644,280 @@
     width: 76px;
     display: flex;
     justify-content: space-between;
+}
+
+.directionTitleCanBeChange
+{
+    height: 28px;
+    width: 100%;
+}
+
+.directionDateAndTimeWithText
+{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionTitleCanBeChange
+    {
+        display: none;
+    }
+
+    .directionDateAndTimeWithText
+    {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .directionTitleCanBeChange
+    {
+        height: 16px;
+        width: 100%;
+        display: flex;
+    }
+
+    .directionDateAndTimeWithText
+    {
+        height: 36px;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+.directionTitleMainPart
+{
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    margin: 0;
+    font-family: 'Raleway-Semibold';
+    font-weight: 600;
+    font-size: 24px;
+    color:var(--text-color);
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .directionTitleMainPart
+    {
+        font-size: 15px;
+    }
+}
+
+.directionTitleMainPart.active
+{
+    opacity: 1;
+}
+
+.directionTitleWithText
+{
+    position: relative;
+}
+
+.directionTitleCanBeChange
+{
+    position: relative;
+}
+
+.directionDateWithLargeLength
+{
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.directionTimeWithLargeLength
+{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionDateWithLargeLength
+    {
+        height: 26px;
+        width: 100%;
+    }
+
+    .directionTimeWithLargeLength
+    {
+        height: 27px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .directionDateWithLargeLength
+    {
+        height: 36px;
+        width: fit-content;
+    }
+
+    .directionTimeWithLargeLength
+    {
+        height: 36px;
+        width: fit-content;
+    }
+}
+
+.directionCalendar
+{
+    height: 24px;
+    width: 24px;
+    margin-right: 22px;
+}
+
+.directionCalendarText
+{
+    height: 21px;
+    width: calc(100% - 46px);
+    position: relative;
+    display: flex;
+}
+
+.directionTimer
+{
+    height: 25px;
+    width: 25px;
+    margin-right: 21px;
+}
+
+.directionTimerText
+{
+    height: 21px;
+    width: calc(100% - 46px);
+    position: relative;
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionCalendar
+    {
+        height: 26px;
+        width: 26px;
+        margin-right: 8px;
+    }
+
+    .directionCalendarText
+    {
+        height: 21px;
+        width: calc(100% - 34px);
+    }
+
+    .directionTimer
+    {
+        height: 27px;
+        width: 27px;
+        margin-right: 7px;
+    }
+
+    .directionTimerText
+    {
+        height: 21px;
+        width: calc(100% - 34px);
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .directionCalendar
+    {
+        height: 23px;
+        width: 23px;
+        margin-right: 25px;
+    }
+
+    .directionCalendarText
+    {
+        height: 100%;
+        width: 88px;
+        flex-direction: column;
+    }
+
+    .directionTimer
+    {
+        height: 24px;
+        width: 24px;
+        margin-right: 22px;
+    }
+
+    .directionTimerText
+    {
+        height: 100%;
+        width: 97px;
+        flex-direction: column;
+    }
+}
+
+.directionCalendarAndTimerText
+{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin: 0;
+    font-family: 'Raleway-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-additional-color);
+    line-height: 1.3;
+    font-feature-settings: "lnum";
+}
+
+.directionCalendarAndTimerText.active
+{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 696px)
+{
+    .directionCalendarAndTimerText
+    {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
+
+@media screen and (max-width: 696px)
+{
+    .directionCalendarAndTimerText
+    {
+        font-size: 13px;
+        line-height: 1.35;
+    }
+}
+
+.directionCalendarAndTimerTextWrapper
+{
+    position: absolute;
+    display: flex;
+}
+
+@media screen and (max-width: 696px)
+{
+    .directionCalendarAndTimerTextWrapper
+    {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+}
+
+.directionAdditionalSpace
+{
+    margin-right: 5px;
 }
