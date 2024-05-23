@@ -326,7 +326,7 @@
 .priceSecondAndThirdColumn
 {
     height: 100%;
-    width: 835px;
+    width: 870px;
     display: flex;
     justify-content: space-between;
 }
@@ -686,7 +686,7 @@
     {
         font-size: 14px;
         line-height: 1.2;
-        width: 70px;
+        width: 118px;
     }
 }
 
@@ -700,6 +700,7 @@
 {
     width: fit-content;
     height: fit-content;
+    display: flex;
 }
 
 .priceCardInfoBlock.bottom
@@ -712,7 +713,17 @@
     width: fit-content;
 }
 
+.priceCardPriceInfo.green.notgreen
+{
+    color: var(--text-color);
+}
+
 .priceCardPriceInfo.green.onenumber
+{
+    margin-right: 7px;
+}
+
+.priceCardPriceInfo.notgreen.onenumber
 {
     margin-right: 7px;
 }
@@ -753,4 +764,45 @@
 {
     width: 100%;
     height: 100%;
+}
+
+.priceAddCardHalfUp
+{
+    height: 36px;
+    width: 100%;
+}
+
+.priceAddCardHalfBottom
+{
+    height: 35px;
+    width: 100%;
+}
+
+.priceAddCard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.priceAddCardHalfBottom
+{
+    display: flex;
+    align-items: end;
+}
+
+.priceCardPriceInfo.small.onetext.notgreen
+{
+    width: fit-content;
+}
+
+.priceCardPriceInfo.onenumber.notgreen
+{
+    margin-right: 7px;
+}
+
+.priceCardTextNumberExecises.special
+{
+    height: 100%;
+    align-items: flex-end;
 }

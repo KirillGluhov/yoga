@@ -33,7 +33,7 @@ function PriceCard(props: {price: OnePrice})
                 <div className="priceCardNumberExecises">
                     <p className="priceCardPriceInfo green onenumber">1</p>
                 </div>
-                <div className="priceCardTextNumberExecises">
+                <div className="priceCardTextNumberExecises special">
                     <p className="priceCardPriceInfo small green onetext">занятие</p>
                 </div>
             </div>
