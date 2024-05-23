@@ -23,11 +23,31 @@ function Header(props: {width: number, isScreenPC: boolean, isScreenTablet: bool
                     <Logo width={115} height={50}/>
                 </div>
                 <div className="menu">
-                    <a href="#direction" className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ПРОГРАММЫ</a>
-                    <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ПРАЙС</a>
-                    <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>РАСПИСАНИЕ</a>
-                    <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ОТЗЫВЫ</a>
-                    <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>КОНТАКТЫ</a>
+                    <a 
+                        href="#direction" 
+                        className="text textColor middleWeight Raleway Medium up-and-down" 
+                        style={{fontSize: "13px"}}
+                    >ПРОГРАММЫ</a>
+                    <a 
+                        href="#price" 
+                        className="text textColor middleWeight Raleway Medium up-and-down" 
+                        style={{fontSize: "13px"}}
+                    >ПРАЙС</a>
+                    <a 
+                        href="#timetable" 
+                        className="text textColor middleWeight Raleway Medium up-and-down" 
+                        style={{fontSize: "13px"}}
+                    >РАСПИСАНИЕ</a>
+                    <a 
+                        href="#reviews" 
+                        className="text textColor middleWeight Raleway Medium up-and-down" 
+                        style={{fontSize: "13px"}}
+                    >ОТЗЫВЫ</a>
+                    <a 
+                        href="#contacts" 
+                        className="text textColor middleWeight Raleway Medium up-and-down" 
+                        style={{fontSize: "13px"}}
+                    >КОНТАКТЫ</a>
                 </div>
                 <div className="telephone">
                     <Telephone/>
@@ -73,11 +93,31 @@ function Header(props: {width: number, isScreenPC: boolean, isScreenTablet: bool
                 </div>
             </div> 
             <div className={`menu ${!isOpen ? 'hidden' : ''}`}>
-                <a href="#direction" className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ПРОГРАММЫ</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ПРАЙС</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>РАСПИСАНИЕ</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ОТЗЫВЫ</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>КОНТАКТЫ</a>
+                <a 
+                    href="#direction" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >ПРОГРАММЫ</a>
+                <a 
+                    href="#price" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >ПРАЙС</a>
+                <a 
+                    href="#timetable" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >РАСПИСАНИЕ</a>
+                <a 
+                    href="#reviews" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >ОТЗЫВЫ</a>
+                <a 
+                    href="#contacts" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >КОНТАКТЫ</a>
             </div>
             </>
             : 
@@ -105,11 +145,31 @@ function Header(props: {width: number, isScreenPC: boolean, isScreenTablet: bool
                 </div>
             </div> 
             <div className={`menu ${!isOpen ? 'hidden' : ''}`}>
-                <a href="#direction" className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ПРОГРАММЫ</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ПРАЙС</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>РАСПИСАНИЕ</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>ОТЗЫВЫ</a>
-                <a className="text textColor middleWeight Raleway Medium up-and-down" style={{fontSize: "13px"}}>КОНТАКТЫ</a>
+                <a 
+                    href="#direction" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >ПРОГРАММЫ</a>
+                <a 
+                    href="#price" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >ПРАЙС</a>
+                <a 
+                    href="#timetable" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >РАСПИСАНИЕ</a>
+                <a 
+                    href="#reviews" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >ОТЗЫВЫ</a>
+                <a 
+                    href="#contacts" 
+                    className="text textColor middleWeight Raleway Medium up-and-down" 
+                    style={{fontSize: "13px"}}
+                >КОНТАКТЫ</a>
             </div>
             </>
         }

@@ -91,6 +91,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 @media screen and (min-width: 1201px)
@@ -920,4 +921,19 @@
 .directionAdditionalSpace
 {
     margin-right: 5px;
+}
+
+.directionFlower
+{
+    position: absolute;
+    bottom: -95px;
+    left: -10px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .directionFlower
+    {
+        display: none;
+    }
 }

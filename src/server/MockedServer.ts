@@ -132,3 +132,41 @@ export async function fetchDirections() : Promise<Array<Direction>> {
         return [];
     }
 }
+
+export interface OnePrice
+{
+    [key: number]: Array<number | null>;
+}
+
+export async function fetchPrices() : Promise<Array<OnePrice>> {
+    const mock = new MockAdapter(axios);
+
+    mock.onGet('/api/prices').reply(200, {
+        prices: [
+            {
+                1: [800]
+            },
+            {
+                4: [3000, 750]
+            },
+            {
+                8: [5200, 650]
+            },
+            {
+                12: [6600, 550]
+            },
+            {
+                1e1000: [8000, null]
+            }
+        ]
+        
+    });
+
+    try {
+        const response = await axios.get('/api/prices');
+        return response.data.prices;
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

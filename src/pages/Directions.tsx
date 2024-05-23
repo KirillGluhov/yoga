@@ -9,6 +9,8 @@ import LeftArrowActive from "../icons/leftArrowActive";
 import RightArrow from "../icons/rightArrow";
 import { chooseDay } from "../functions/chooseDay";
 
+import flower from "../background/directionFlower.svg";
+
 import calendarLg from "../UIelements/calendarLg.svg";
 import calendarMd from "../UIelements/calendarMd.svg";
 import calendarSm from "../UIelements/calendarSm.svg";
@@ -88,6 +90,7 @@ function Directions()
             </div>
         </div>
         <div className="directionMainInformation">
+            <img src={flower} className="directionFlower"/>
             <div className="typesOfDirections second add additional">
                 {
                     directions.map((direction, index) => (
